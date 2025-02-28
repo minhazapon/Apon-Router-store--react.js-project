@@ -35,9 +35,9 @@ function Nav() {
                             {NavZ}
                         </ul>
                     </div>
-                    <div className=" flex items-center gap-2 ">
-                        <img className="h-[60px]" src="https://cdn-icons-png.flaticon.com/128/3771/3771409.png" alt="" />
-                        <p className=" text-xl font-thin text-blue-900  ">Apon <span className=" font-bold text-3xl text-black ">Router</span> Store</p>
+                    <div className=" flex items-center gap-2  md:ml-10 ">
+                        <img className=" h-[30px] md:h-[60px]" src="https://cdn-icons-png.flaticon.com/128/3771/3771409.png" alt="" />
+                        <p className=" text-xs md:text-xl font-thin text-blue-900  ">Apon <span className=" font-bold text-xs md:text-3xl text-[#71c4b7] ">Router</span> Store</p>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -45,8 +45,8 @@ function Nav() {
                         {NavZ}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <button className=" btn ">Login</button>
+                <div className="navbar-end md:mr-10">
+                    <button className="btn bg-[#B5E8E0]">Login</button>
                 </div>
             </div>
         </div>
