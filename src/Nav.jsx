@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"
 
-
 function Nav() {
 
     const NavZ = <>
@@ -8,6 +7,7 @@ function Nav() {
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/shop'>Shop</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
+        <li><NavLink to='/service'>Service</NavLink></li>
     </>
 
     return (
