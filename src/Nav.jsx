@@ -35,14 +35,18 @@ function Nav() {
                             {NavZ}
                         </ul>
                     </div>
-                    <div>
-                        <img className=" h-[30px] " src="https://reactrouter.com/_brand/React%20Router%20Brand%20Assets/React%20Router%20Lockup/Light.svg" alt="" />
+                    <div className=" flex items-center gap-2 ">
+                        <img className="h-[60px]" src="https://cdn-icons-png.flaticon.com/128/3771/3771409.png" alt="" />
+                        <p className=" text-xl font-thin text-blue-900  ">Apon <span className=" font-bold text-3xl text-black ">Router</span> Store</p>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {NavZ}
                     </ul>
+                </div>
+                <div className="navbar-end">
+                    <button className=" btn ">Login</button>
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@ import RootAppLayout from './RootAppLayout.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Shop from './components/Shop.jsx';
+import Service from './components/Service.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop></Shop>,
+      },
+      {
+        path: "/service",
+        element: <Service></Service>,
       },
     ],
   },
