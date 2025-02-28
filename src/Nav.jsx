@@ -4,15 +4,12 @@ import { NavLink } from "react-router-dom"
 function Nav() {
 
     const NavZ = <>
-
         <li><NavLink to='/'>Home</NavLink></li>
-
     </>
 
     return (
         <div>
-
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-white p-5 shadow">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,8 +33,7 @@ function Nav() {
                         </ul>
                     </div>
                     <div>
-                        <img src="https://reactrouter.com/_brand/React%20Router%20Brand%20Assets/React%20Router%20Lockup/Light.svg" alt="" />
-                        <a className="text-xl">React Router</a>
+                        <img className=" h-[30px] " src="https://reactrouter.com/_brand/React%20Router%20Brand%20Assets/React%20Router%20Lockup/Light.svg" alt="" />
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -46,7 +42,6 @@ function Nav() {
                     </ul>
                 </div>
             </div>
-
         </div>
     )
 }
