@@ -9,7 +9,6 @@ import {
 import Home from './Home.jsx';
 import RootAppLayout from './RootAppLayout.jsx';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
