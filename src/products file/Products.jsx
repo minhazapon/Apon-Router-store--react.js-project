@@ -4,10 +4,10 @@ function Products() {
 
 
     return (
-        <div className="m-20">
+        <div className="m-16">
             <div>
 
-                <p className="text-center font-sans text-5xl font-bold">Best Routers</p>
+                <p className="text-center font-thin text-black text-5xl">Best Routers</p>
 
                 <div>
 

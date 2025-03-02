@@ -13,8 +13,8 @@ import Contact from './components/Contact.jsx';
 import Shop from './components/Shop.jsx';
 import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
-import Products from './products file/Products.jsx';
 import PMain from './products file/ProductsMain.jsx';
+import Products from './products file/Products.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +45,11 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <PMain></PMain>,
+      },
+      {
+        path: "/router",
+        element: <Products></Products>,
+        loader: () => fetch("https://raw.githubusercontent.com/minhazapon/Apon-Router-store--react.js-project/refs/heads/main/public/router.json")
       },
     ],
   },
