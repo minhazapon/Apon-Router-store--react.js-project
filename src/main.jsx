@@ -13,7 +13,8 @@ import Contact from './components/Contact.jsx';
 import Shop from './components/Shop.jsx';
 import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
-import Products from './components/Products.jsx';
+import Products from './products file/Products.jsx';
+import PMain from './products file/ProductsMain.jsx';
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <Products></Products>,
+        element: <PMain></PMain>,
       },
     ],
   },

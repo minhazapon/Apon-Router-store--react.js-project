@@ -1,6 +1,8 @@
 
 
-function Products() {
+
+function Banner() {
+
     return (
         <div>
 
@@ -8,4 +10,4 @@ function Products() {
     )
 }
 
-export default Products
+export default Banner
