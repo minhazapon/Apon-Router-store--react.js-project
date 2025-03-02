@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom"
 function Nav() {
 
     const NavZ = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/shop'>Shop</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
-        <li><NavLink to='/service'>Service</NavLink></li>
+        <li className="  font-semibold "><NavLink to='/'>Home</NavLink></li>
+        <li className=" font-semibold "><NavLink to='/about' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>About</NavLink></li>
+        <li className=" font-semibold "><NavLink to='/shop' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>Shop</NavLink></li>
+        <li className=" font-semibold "><NavLink to='/contact' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>Contact</NavLink></li>
+        <li className=" font-semibold "><NavLink to='/service' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>Service</NavLink></li>
     </>
 
     return (
