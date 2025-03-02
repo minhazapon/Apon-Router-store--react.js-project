@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"
 
-
 function ErrorPage() {
     return (
         <div className=" m-20 ">
@@ -11,6 +10,11 @@ function ErrorPage() {
                 <NavLink to='/' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>
                     <div className=" flex justify-center "><button className=" bg-black btn w-[300px] text-white ">Go Back To Home Page</button></div>
                 </NavLink>
+                <div className=" flex justify-center ">
+                    <button className=" bg-black btn w-[300px] text-white ">
+                        Go Back
+                    </button>
+                </div>
             </div>
         </div>
     )
