@@ -1,0 +1,183 @@
+[
+    {
+      "id": 1,
+      "image": "https://www.startech.com.bd/image/cache/catalog/router/tp-link/archer-c6-ac1200/archer-c6-ac1200-5-500x500.jpg",
+      "name": "TP-Link Archer C6",
+      "company": "TP-Link",
+      "details": "Dual-band router with MU-MIMO technology and 4 external antennas.",
+      "price": 2500,
+      "brand": "TP-Link"
+    },
+    {
+      "id": 2,
+      "image": "https://www.netgear.com/zone2/cid/fit/1024x633/https/www.netgear.com/fr/media/RAX120_productcarousel_hero_image_tcm169-96405.jpg",
+      "name": "Netgear Nighthawk AX12",
+      "company": "Netgear",
+      "details": "WiFi 6 router with 12-streams and ultra-fast speed.",
+      "price": 12000,
+      "brand": "Netgear"
+    },
+    {
+      "id": 3,
+      "image": "https://www.techlandbd.com/image/cache/catalog/Asus/asus-rt-ax86u-pro-ax5700-gaming-router-01-400x280h.jpg",
+      "name": "Asus RT-AX86U",
+      "company": "Asus",
+      "details": "Gaming router with WiFi 6 and dual-band support.",
+      "price": 14000,
+      "brand": "Asus"
+    },
+    {
+      "id": 4,
+      "image": "https://www.dlink.com/uk/en/-/media/product-pages/dir/615/dir615h2imagelside.png",
+      "name": "D-Link DIR-615",
+      "company": "D-Link",
+      "details": "Affordable router with 300Mbps speed and dual antennas.",
+      "price": 1500,
+      "brand": "D-Link"
+    },
+    {
+      "id": 5,
+      "image": "https://mobilexchangebd.com/storage/products/2571-35452.jpg",
+      "name": "Xiaomi Mi Router 4A",
+      "company": "Xiaomi",
+      "details": "Smart router with dual-band support and 4 high-gain antennas.",
+      "price": 2000,
+      "brand": "Xiaomi"
+    },
+    {
+      "id": 6,
+      "image": "https://images-cdn.ubuy.com.sa/65b4031dc88d481af63d113a-linksys-wifi-5-router-dual-band-1-000.jpg",
+      "name": "Linksys EA7500",
+      "company": "Linksys",
+      "details": "Dual-band router with MU-MIMO and Gigabit ports.",
+      "price": 8000,
+      "brand": "Linksys"
+    },
+    {
+      "id": 7,
+      "image": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/routers/ax3-dual-core/update/img/huawei-ax3-mobi.jpg",
+      "name": "Huawei AX3 Pro",
+      "company": "Huawei",
+      "details": "WiFi 6 router with quad-core CPU and OFDMA technology.",
+      "price": 6000,
+      "brand": "Huawei"
+    },
+    {
+      "id": 8,
+      "image": "https://static.mercusys.com/product-image/MR37BE_EU_1.0_2412_overview_01_normal20250226034830.jpg",
+      "name": "Mercusys AC1200",
+      "company": "Mercusys",
+      "details": "Budget-friendly dual-band router with 4 antennas.",
+      "price": 1800,
+      "brand": "Mercusys"
+    },
+    {
+      "id": 9,
+      "image": "https://rootfivebd.com/wp-content/uploads/2023/07/Tenda-AC10-AC1200-1200Mbps-Dual-Band-4-Antenna-Gigabit-WiFi-Router.webp",
+      "name": "Tenda AC10",
+      "company": "Tenda",
+      "details": "Gigabit dual-band router with high-speed connectivity.",
+      "price": 2500,
+      "brand": "Tenda"
+    },
+    {
+      "id": 10,
+      "image": "https://cdn.cs.1worldsync.com/7b/3f/7b3ffb80-b682-47b5-b5cc-a93c851c3144.jpg",
+      "name": "Synology RT2600ac",
+      "company": "Synology",
+      "details": "High-performance router with advanced security features.",
+      "price": 15000,
+      "brand": "Synology"
+    },
+    {
+      "id": 11,
+      "image": "https://smartlife.com.bd/wp-content/uploads/2023/03/71IRVJT1nJL._AC_SL1500_.jpg",
+      "name": "Google Nest WiFi",
+      "company": "Google",
+      "details": "Mesh WiFi system with seamless coverage and smart home integration.",
+      "price": 10000,
+      "brand": "Google"
+    },
+    {
+      "id": 12,
+      "image": "https://m.media-amazon.com/images/I/21gGCZ4JIRL._SS400_.jpg",
+      "name": "Amazon Eero Pro 6",
+      "company": "Amazon",
+      "details": "Mesh WiFi system with WiFi 6 and extensive coverage.",
+      "price": 12000,
+      "brand": "Amazon"
+    },
+    {
+      "id": 13,
+      "image": "https://www.startech.com.bd/image/cache/catalog/router/tp-link/deco-x20-ax1800-3-pack/deco-x20-ax1800-3-pack-500x500.jpg",
+      "name": "TP-Link Deco X20",
+      "company": "TP-Link",
+      "details": "WiFi 6 mesh system with AI-driven mesh technology.",
+      "price": 8000,
+      "brand": "TP-Link"
+    },
+    {
+      "id": 14,
+      "image": "https://www.netgear.com/media/tech-specs-image-1-rbk752-satellite-labels_tcm148-123154.jpg",
+      "name": "Netgear Orbi RBK752",
+      "company": "Netgear",
+      "details": "Tri-band mesh WiFi system with high-speed performance.",
+      "price": 20000,
+      "brand": "Netgear"
+    },
+    {
+      "id": 15,
+      "image": "https://m.media-amazon.com/images/I/71krwLVVWgL.jpg",
+      "name": "Asus ZenWiFi AX6600",
+      "company": "Asus",
+      "details": "Whole-home mesh WiFi with ultra-fast speeds.",
+      "price": 25000,
+      "brand": "Asus"
+    },
+    {
+      "id": 16,
+      "image": "https://www.dlink.com/us/en/-/media/product-pages/dir/x5460/dir_x5460_a1_front.png?h=918&w=1304&la=en-US&hash=4201234A0C786052C349F3EC804AE831",
+      "name": "D-Link EXO AX5400",
+      "company": "D-Link",
+      "details": "Powerful WiFi 6 router with high-performance features.",
+      "price": 11000,
+      "brand": "D-Link"
+    },
+    {
+      "id": 17,
+      "image": "https://computerimporter.com/image/cache/catalog/products/routers/Xiaomi/Xiaomi%20Mi%20AIoT%20AX3600-400x400.jpg",
+      "name": "Xiaomi AIoT AX3600",
+      "company": "Xiaomi",
+      "details": "AI-powered router with WiFi 6 and 7 antennas.",
+      "price": 7000,
+      "brand": "Xiaomi"
+    },
+    {
+      "id": 18,
+      "image": "https://assets.hardwarezone.com/img/2021/03/linksys-velop-mx4200-ports.jpg",
+      "name": "Linksys Velop MX4200",
+      "company": "Linksys",
+      "details": "Mesh WiFi system with powerful signal coverage.",
+      "price": 15000,
+      "brand": "Linksys"
+    },
+    {
+      "id": 19,
+      "image": "https://compujordan.com/image/cache/catalog/products/ACC/Network/Huawei/Q2%20Pro%20(1%20Base%20+%201%20Satellites)/Q2%20Pro%20(1%20Base%20+%201%20Satellites)%20-%201-1200x1200.jpg",
+      "name": "Huawei Q2 Pro",
+      "company": "Huawei",
+      "details": "Hybrid WiFi system with plug-and-play setup.",
+      "price": 5000,
+      "brand": "Huawei"
+    },
+    {
+      "id": 20,
+      "image": "https://www.techadvisor.com/wp-content/uploads/2022/06/tenda-nova-mw6-review.jpg?quality=50&strip=all",
+      "name": "Tenda Nova MW6",
+      "company": "Tenda",
+      "details": "Mesh WiFi system with seamless connectivity.",
+      "price": 7000,
+      "brand": "Tenda"
+    }
+]
+  
