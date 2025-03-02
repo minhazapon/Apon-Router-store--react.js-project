@@ -9,7 +9,7 @@ function ErrorPage() {
                     <img src="https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif" alt="" />
                 </div>
                 <NavLink to='/' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>
-                    <div><button className=" bg-black btn w-[300px] text-white ">Go Back To Home Page</button></div>
+                    <div className=" flex justify-center "><button className=" bg-black btn w-[300px] text-white ">Go Back To Home Page</button></div>
                 </NavLink>
             </div>
         </div>
