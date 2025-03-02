@@ -14,7 +14,7 @@ function Products() {
             <div className="m-16">
                 <p className="text-center font-thin text-black text-5xl">Best Routers : </p>
                 <div>
-                    <div>
+                    <div className=" grid  md:grid-cols-3 gap-5 mt-10 ">
                         {
                             RouterData.map(router => <Details key={router.id} router={router} ></Details>)
                         }
