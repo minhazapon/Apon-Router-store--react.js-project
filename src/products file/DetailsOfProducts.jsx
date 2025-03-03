@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function Details({ router }) {
@@ -19,7 +20,9 @@ function Details({ router }) {
                     <p>Price: {price} </p>
                     <p>Brand: {brand} </p>
                     <div className="card-actions justify-end">
-                        <button className="btn bg-[#B5E8E0] text-black  ">$Buy Now</button>
+                        <Link to={`/router/${id}`}>
+                            <button className="btn bg-[#B5E8E0] text-black  ">Details</button>
+                        </Link>
                     </div>
                 </div>
             </div>

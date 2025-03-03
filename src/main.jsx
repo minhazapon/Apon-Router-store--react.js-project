@@ -15,6 +15,7 @@ import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Products from './products file/Products.jsx';
 import Loading from './Loading/Loading.jsx';
+import ProductsDetails from './products file/ProductsDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,14 @@ const router = createBrowserRouter([
         path: "/router",
         element: <Products></Products>,
         loader: () => fetch('https://raw.githubusercontent.com/minhazapon/Apon-Router-store--react.js-project/refs/heads/main/public/router.json').then(res => res.json())
+      },
+      {
+        path: "/router/:id",
+        element: <ProductsDetails></ProductsDetails>,
+        loader: ({ params }) =>
+          fetch('https://raw.githubusercontent.com/minhazapon/Apon-Router-store--react.js-project/refs/heads/main/public/router.json')
+            .then(res => res.json())
+            .then(data => data.find(items => items.id === params.id))
       },
     ],
   },
