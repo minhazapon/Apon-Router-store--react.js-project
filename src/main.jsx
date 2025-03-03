@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: "/router",
         element: <Products></Products>,
-        loader: () => fetch('router.json').then(res => res.json())
+        loader: () => fetch('https://raw.githubusercontent.com/minhazapon/Apon-Router-store--react.js-project/refs/heads/main/public/router.json').then(res => res.json())
       },
     ],
   },
