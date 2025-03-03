@@ -5,7 +5,6 @@ import { useEffect, useState } from "react"
 
 function RootAppLayout() {
 
-
     const navigation = useNavigation();
     const [showLoading, setShowLoading] = useState(false);
     const [loadingTimeout, setLoadingTimeout] = useState(null);
