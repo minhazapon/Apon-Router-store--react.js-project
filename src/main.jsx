@@ -46,15 +46,11 @@ const router = createBrowserRouter([
       {
         path: "/router",
         element: <Products></Products>,
-        loader: () => fetch('https://raw.githubusercontent.com/minhazapon/Apon-Router-store--react.js-project/refs/heads/main/public/router.json').then(res => res.json())
+        loader: () => fetch('router.json').then(res => res.json())
       },
       {
         path: "/router/:id",
         element: <ProductsDetails></ProductsDetails>,
-        loader: ({ params }) =>
-          fetch('https://raw.githubusercontent.com/minhazapon/Apon-Router-store--react.js-project/refs/heads/main/public/router.json')
-            .then(res => res.json())
-            .then(data => data.find(items => items.id === params.id))
       },
     ],
   },
