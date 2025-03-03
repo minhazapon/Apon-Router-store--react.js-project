@@ -8,7 +8,6 @@ export const handleForm = async ({ request }) => {
         const data = Object.fromEntries(res)
         console.log(data)
 
-        // ✅ SweetAlert Success Message
         Swal.fire({
             title: "Success!",
             text: "Your message has been sent successfully.",
