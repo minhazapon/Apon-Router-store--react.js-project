@@ -16,6 +16,7 @@ import ErrorPage from './ErrorPage.jsx';
 import Products from './products file/Products.jsx';
 import Loading from './Loading/Loading.jsx';
 import ProductsDetails from './products file/ProductsDetails.jsx';
+import FormCompo from './form component/FormComponent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/router/:id",
         element: <ProductsDetails></ProductsDetails>,
+      },
+      {
+        path: "/contact",
+        element: <FormCompo></FormCompo>,
       },
     ],
   },
