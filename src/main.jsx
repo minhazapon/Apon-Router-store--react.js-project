@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         element: <ProductsDetails></ProductsDetails>,
       },
       {
-        path: "/contact",
+        path: "/contactForm",
         element: <FormCompo></FormCompo>,
       },
     ],
