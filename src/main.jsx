@@ -14,6 +14,7 @@ import Shop from './components/Shop.jsx';
 import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Products from './products file/Products.jsx';
+import Loading from './Loading/Loading.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service></Service>,
+      },
+      {
+        path: "/loading",
+        element: <Loading></Loading>,
       },
       {
         path: "/router",
