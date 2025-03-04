@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom"
 
 
 function Details({ router }) {
 
-    const { id, image, name, company, details, price, brand } = router
+    const { image, name, company, details, price, brand } = router
 
     return (
         <div>
