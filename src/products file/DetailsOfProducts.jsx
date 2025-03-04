@@ -20,13 +20,11 @@ function Details({ router }) {
                     <p>Price: {price} </p>
                     <p>Brand: {brand} </p>
                     <div className="card-actions justify-end">
-                        <Link to={`/router/${id}`}>
-                            <button className="btn bg-[#B5E8E0] text-black  ">Details</button>
-                        </Link>
+                        <button className="btn bg-[#B5E8E0] text-black">$buy Now</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

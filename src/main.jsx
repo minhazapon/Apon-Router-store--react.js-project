@@ -14,7 +14,6 @@ import Shop from './components/Shop.jsx';
 import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Products from './products file/Products.jsx';
-import ProductsDetails from './products file/ProductsDetails.jsx';
 import FormCompo, { handleForm } from './form component/FormComponent.jsx';
 
 const router = createBrowserRouter([
@@ -47,10 +46,6 @@ const router = createBrowserRouter([
         path: "/router",
         element: <Products></Products>,
         loader: () => fetch('router.json').then(res => res.json())
-      },
-      {
-        path: "/router/:id",
-        element: <ProductsDetails></ProductsDetails>,
       },
       {
         path: "/contactForm",
