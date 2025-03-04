@@ -3,7 +3,6 @@
 function HomeBanner() {
     return (
         <div>
-
             <div className=" ml-10 mr-10 p-5 flex justify-between items-center">
                 <div>
                     <p className=" text-6xl font-bold ">Discover a <br></br>world without<br></br> limits
