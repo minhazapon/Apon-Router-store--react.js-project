@@ -2,8 +2,12 @@
 
 function Super() {
     return (
-        <div>
-            <div className=" mt-20 ml-10 mr-10 p-5 flex justify-between items-center ">
+        <div className=" bg-no-repeat bg-cover p-6 "
+            style={{
+                backgroundImage: "url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3772.jpg?t=st=1741083102~exp=1741086702~hmac=ad5a663fcb62b21361e66a6f73b86c17a6091342ee996d13215e3b836dab0f31&w=1060)",
+            }}
+        >
+            <div className=" mt-20 ml-10 mr-10 flex justify-between items-center ">
                 <div>
                     <p className=" text-5xl font-bold ">The new super<br></br> powerful Galaxy<br></br> Note9</p>
                     <p className=" mt-5 text-xl ">Meet the latest member of the router family.</p>
