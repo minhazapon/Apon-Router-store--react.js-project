@@ -6,7 +6,7 @@ function Explore() {
 
             <div>
                 <div>
-                    <p>Explore other best Router devices.</p>
+                    <p className=" text-center text-3xl">Explore other best <span className=" text-4xl text-[#72afa6]">ROUTER</span> devices.</p>
                 </div>
 
 
