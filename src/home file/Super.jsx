@@ -13,6 +13,10 @@ function Super() {
                     </div>
                 </div>
 
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1864/1864077.png" alt="" />
+                </div>
+
             </div>
         </div>
     )
