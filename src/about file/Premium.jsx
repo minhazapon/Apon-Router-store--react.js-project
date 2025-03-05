@@ -22,7 +22,14 @@ function Premium() {
             <div>
                 <div className=" ml-10 mr-10 p-5 mt-20 ">
                     <div>
-                        <p className=" text-center text-5xl font-semibold text-black ">Some Premium Products</p>
+                        <p className=" text-center text-xl md:text-5xl font-semibold text-black ">Some Premium Products</p>
+                    </div>
+                    <div className=" mt-5 flex justify-center pl-5 pr-5 ">
+                        <input
+                            className="w-full border-[1px] h-[50px] p-2"
+                            placeholder="Search Here"
+                            type="search"
+                            name="search" id="" />
                     </div>
                     <div className=" flex justify-center mt-10 ">
                         <div className=" grid  md:grid-cols-3 gap-5 ">
