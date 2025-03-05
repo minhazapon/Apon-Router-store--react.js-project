@@ -8,13 +8,13 @@ import {
 } from "react-router-dom";
 import Home from './Home.jsx';
 import RootAppLayout from './RootAppLayout.jsx';
-import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Shop from './components/Shop.jsx';
 import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Products from './products file/Products.jsx';
 import FormCompo, { handleForm } from './form component/FormComponent.jsx';
+import About from './about file/About.jsx';
 
 const router = createBrowserRouter([
   {
