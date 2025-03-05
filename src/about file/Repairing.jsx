@@ -22,16 +22,22 @@ function Repairing() {
                     <div>
                         <p className=" text-center text-6xl font-bold text-black ">Repairing Services</p>
                     </div>
-                    <div>
-                        <div>
+                    <div className=" flex justify-center mt-10 ">
+                        <div className=" grid  md:grid-cols-4 gap-10 ">
                             {
                                 service.map(cardData => <ul key={cardData.id}>
-
                                     <div>
-                                        <p> {cardData.name} </p>
-
+                                        <div className=" bg-white border-[1px] w-[250px] p-3 ">
+                                            <div>
+                                                <img className="h-[70px]" src={cardData.image} alt="" />
+                                            </div>
+                                            <p className=" text-xl font-semibold text-black mt-5">{cardData.name}</p>
+                                            <p className=" text-black mt-5">{cardData.service}</p>
+                                            <div>
+                                                <button className=" btn text-white bg-black mt-5 ">Read more</button>
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </ul>)
                             }
                         </div>
