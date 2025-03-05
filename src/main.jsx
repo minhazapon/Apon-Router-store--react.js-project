@@ -9,11 +9,11 @@ import {
 import Home from './Home.jsx';
 import RootAppLayout from './RootAppLayout.jsx';
 import Contact from './components/Contact.jsx';
-import Shop from './components/Shop.jsx';
 import Service from './components/Service.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Products from './products file/Products.jsx';
 import About from './about file/About.jsx';
+import Shop from './shop file/Shop.jsx';
 
 const router = createBrowserRouter([
   {
