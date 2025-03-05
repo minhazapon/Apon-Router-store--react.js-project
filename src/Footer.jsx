@@ -3,7 +3,7 @@ function Footer() {
     return (
         <>
             <div>
-                <div className="mt-20">
+                <div>
                     <footer className="footer sm:footer-horizontal bg-black text-white pl-2 pr-4 pt-20 pb-20">
                         <aside className=" ml-10 ">
                             <img src="https://cdn-icons-png.flaticon.com/128/3771/3771409.png" alt="" />
@@ -23,7 +23,6 @@ function Footer() {
                                 <a>
                                     <img className=" h-[30px] " src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="" />
                                 </a>
-
                             </div>
                         </nav>
                     </footer>

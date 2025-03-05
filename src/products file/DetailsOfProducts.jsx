@@ -1,5 +1,4 @@
 
-
 function Details({ router }) {
 
     const { image, name, company, details, price, brand } = router

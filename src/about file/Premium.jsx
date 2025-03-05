@@ -2,10 +2,10 @@ import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
 
-
 function Premium() {
 
     const [wifi, setWifi] = useState([])
+    const [search, setSearch] = useState("")
 
     useEffect(() => {
         axios.get('wifi.json')
@@ -17,6 +17,10 @@ function Premium() {
             })
     })
 
+    const searchProducts = wifi.filter((products) =>
+        products.name.toLowerCase().includes(search.toLowerCase())
+    )
+
     return (
         <>
             <div>
@@ -27,6 +31,8 @@ function Premium() {
                     <div className=" mt-5 flex justify-center pl-5 pr-5 ">
                         <input
                             className="w-full border-[1px] h-[50px] p-2"
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
                             placeholder="Search Here"
                             type="search"
                             name="search" id="" />
@@ -34,7 +40,7 @@ function Premium() {
                     <div className=" flex justify-center mt-10 ">
                         <div className=" grid  md:grid-cols-3 gap-5 ">
                             {
-                                wifi.map(products => <ul key={products.id}>
+                                searchProducts.map(products => <ul key={products.id}>
                                     <div className="card bg-base-100 w-96 h-[500px] border-[1px] ">
                                         <figure>
                                             <img

@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import Connect from "./home file/Connect"
 import Explore from "./home file/Explore"
 import Gear from "./home file/Gear"
@@ -17,7 +17,6 @@ function Home() {
             <See></See>
             <Gear></Gear>
             <Power></Power>
-            <Footer></Footer>
         </div>
     )
 }

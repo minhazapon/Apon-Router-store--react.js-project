@@ -2,6 +2,7 @@ import { Outlet, useNavigation } from "react-router-dom"
 import Nav from "./Nav"
 import Loading from "./Loading/Loading"
 import { useEffect, useState } from "react"
+import Footer from "./Footer";
 
 function RootAppLayout() {
 
@@ -40,6 +41,7 @@ function RootAppLayout() {
         <div>
             <Nav></Nav>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     )
 }
