@@ -1,7 +1,6 @@
 import AboutBanner from "./AboutBanner"
 import Repairing from "./Repairing"
 
-
 function About() {
     return (
         <>
