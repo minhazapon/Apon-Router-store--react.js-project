@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/images/router1.jpg",
+      "name": "Netgear Nighthawk AX12",
+      "details": "Wi-Fi 6 router with 12 streams, advanced features for heavy usage, and a powerful 1.8 GHz processor."
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/images/router2.jpg",
+      "name": "Asus RT-AX88U",
+      "details": "Wi-Fi 6 router with 8 Gigabit ports, robust security, and exceptional speed for gaming and streaming."
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/images/router3.jpg",
+      "name": "Linksys Velop MX10",
+      "details": "Mesh Wi-Fi 6 system with coverage up to 6000 sq ft and excellent performance for multiple devices."
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/images/router4.jpg",
+      "name": "TP-Link Archer AX11000",
+      "details": "Tri-band Wi-Fi 6 router with 10 Gigabit ports, designed for heavy gaming and high-speed data transfer."
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/images/router5.jpg",
+      "name": "Google Nest Wi-Fi",
+      "details": "Mesh Wi-Fi system with automatic updates and Google Assistant built-in for smart home integration."
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/images/router6.jpg",
+      "name": "Amazon eero Pro 6",
+      "details": "Wi-Fi 6 mesh router with tri-band performance, designed for high-speed internet and multiple simultaneous connections."
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/images/router7.jpg",
+      "name": "Synology RT2600ac",
+      "details": "High-performance Wi-Fi router with advanced security, QoS, and fast speeds for homes and small businesses."
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/images/router8.jpg",
+      "name": "D-Link DIR-3060",
+      "details": "Tri-band Wi-Fi 6 router with 3 high-performance antennas, offering seamless connectivity for large homes."
+    },
+    {
+      "id": 9,
+      "image": "https://example.com/images/router9.jpg",
+      "name": "Ubiquiti AmpliFi Alien",
+      "details": "Wi-Fi 6 router with a sleek design and powerful mesh system, ideal for large homes with high-speed demands."
+    },
+    {
+      "id": 10,
+      "image": "https://example.com/images/router10.jpg",
+      "name": "Netgear Orbi Wi-Fi 6",
+      "details": "Mesh Wi-Fi system with Wi-Fi 6 technology and a dedicated backhaul for fast speeds and coverage up to 5000 sq ft."
+    }
+  ]
+  
