@@ -8,7 +8,6 @@ function Premium() {
     const [wifi, setWifi] = useState([])
 
     useEffect(() => {
-
         axios.get('wifi.json')
             .then(res => {
                 setWifi(res.data)
@@ -16,7 +15,6 @@ function Premium() {
             .catch(error => {
                 console.log(error)
             })
-
     })
 
     return (
