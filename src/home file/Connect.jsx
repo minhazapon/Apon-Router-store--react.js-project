@@ -5,9 +5,9 @@ function Connect() {
         <div className=" ml-10 mr-10 p-5 mt-20 mb-10 ">
             <div>
                 <div>
-                    <p className="text-center text-4xl text-black">Connect to everything important to you</p>
+                    <p className="text-center text-xl md:text-4xl text-black">Connect to everything important to you</p>
                 </div>
-                <div className=" flex justify-center items-center gap-10 mt-10 ">
+                <div className=" flex-col md:flex-grow lg:flex-row flex justify-center items-center gap-10 mt-10 ">
                     <div className=" border-[1px] w-fit p-5 rounded-xl ">
                         <div className=" flex justify-center">
                             <img className=" h-[500px] rounded-xl " src="https://img.freepik.com/free-photo/wi-fi-router-with-blue-optical-fiber_23-2148779307.jpg?t=st=1741087750~exp=1741091350~hmac=a17ad4714d75042fc741750510fc0c4339e0c336370bcaff0b5061bae474be9f&w=740" alt="" />
