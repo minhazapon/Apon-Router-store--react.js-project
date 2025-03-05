@@ -13,7 +13,7 @@ function HomeBanner() {
                         <button className="btn w-[150px] md:w-[300px] mt-5 bg-black text-white">Learn more</button>
                     </div>
                 </div>
-                <div className="flex justify-start">
+                <div className="flex justify-start mt-6 md:mt-0">
                     <img className="h-[200px] md:h-[400px]" src="https://img.freepik.com/free-vector/internet-day-concept-illustration_114360-5303.jpg?t=st=1741081704~exp=1741085304~hmac=0806f05da9d6ef7c0af910a0c0eb773123f189958c8b7170457c621b693531db&w=740" alt="" />
                 </div>
             </div>
