@@ -17,8 +17,10 @@ function Repairing() {
 
     return (
         <>
-            <div className="">
-                <div className="mt-20 ml-10 mr-10 p-5 mb-16">
+            <div className=" bg-no-repeat bg-cover " style={{
+                backgroundImage: "url(https://i.pinimg.com/originals/22/a5/a7/22a5a7b9dbc0e29ccef006dea5981367.png)",
+            }}>
+                <div className="ml-10 mr-10 p-5 mb-16">
                     <div>
                         <p className=" text-center text-6xl font-bold text-black ">Repairing Services</p>
                     </div>
