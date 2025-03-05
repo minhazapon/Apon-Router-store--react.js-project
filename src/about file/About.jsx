@@ -1,4 +1,5 @@
 import AboutBanner from "./AboutBanner"
+import Premium from "./Premium"
 import Repairing from "./Repairing"
 
 function About() {
@@ -6,6 +7,7 @@ function About() {
         <>
             <AboutBanner></AboutBanner>
             <Repairing></Repairing>
+            <Premium></Premium>
         </>
     )
 }
