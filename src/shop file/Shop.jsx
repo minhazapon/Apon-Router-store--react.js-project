@@ -7,15 +7,13 @@ function Shop() {
     const [cart, setCart] = useState([])
 
     const addCart = (allProducts) => {
-
-        setItem([...Cart, allProducts])
-
+        setCart([...Cart, allProducts])
     }
 
     return (
         <div>
-            <Items></Items>
-            <Cart></Cart>
+            <Items addCart={addCart}></Items>
+            <Cart cart={cart}></Cart>
         </div>
     )
 }
