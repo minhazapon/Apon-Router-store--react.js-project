@@ -25,12 +25,12 @@ function Items({ addCart }) {
                     <ShopBanner></ShopBanner>
                 </div>
                 <div className=" ml-10 mr-10 mt-10 mb-10 p-5 ">
-                    <div>
-                        <div>
+                    <div className=" flex justify-center ">
+                        <div className=" grid  md:grid-cols-4 gap-6 ">
                             {
                                 product.map(allItems => <ul key={allItems.id}>
                                     <div>
-                                        <div class=" w-[300px] border-[1px] space-y-6 overflow-hidden rounded-lg  border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                        <div class=" h-[520px] w-[300px] border-[1px] hover:border-[#B5E8E0] space-y-6 overflow-hidden rounded-lg  border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
                                             <a href="#" class="overflow-hidden rounded">
                                                 <img class="mx-auto h-44 w-44 dark:hidden" src={allItems.image} alt="imac image" />
                                                 <img class="mx-auto hidden h-44 w-44 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg" alt="imac image" />
@@ -57,7 +57,7 @@ function Items({ addCart }) {
                                                     Add to favourites
                                                     <div class="tooltip-arrow" data-popper-arrow></div>
                                                 </div>
-                                                <button type="button" class=" bg-black text-white inline-flex w-[200px] items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium btn hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                                <button onClick={() => addCart(allItems)} type="button" class=" bg-black text-white inline-flex w-[200px] items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium btn hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                                                     <svg class="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4" />
                                                     </svg>
