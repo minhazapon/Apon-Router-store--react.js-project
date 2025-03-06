@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 export default function PaymentForm() {
     const [formData, setFormData] = useState({
@@ -14,7 +15,13 @@ export default function PaymentForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Payment Submitted Successfully!");
+        Swal.fire({
+            title: 'Payment Done!',
+            text: 'Do you want to continue',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+        })
+        setFormData({ name: "", cardNumber: "", expiry: "", cvv: "" });
     };
 
     return (
@@ -78,7 +85,7 @@ export default function PaymentForm() {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-medium"
+                        className="w-full btn bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-medium"
                     >
                         Pay Now
                     </button>
