@@ -88,7 +88,6 @@ function Items({ addCart, product, setProduct }) {
                         </div>
                     </div>
                 </div>
-
                 {/* Pagination Buttons */}
                 <div className="flex justify-center mt-6 space-x-4">
                     <button
