@@ -1,6 +1,41 @@
+import Swal from "sweetalert2";
 
 
 function Contact() {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            Swal.fire({
+                title: 'Contact Done!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+            event.target.reset();
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Do you want to continue',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+            })
+            setResult(data.message);
+        }
+    };
+
+
     return (
         <>
 
@@ -88,20 +123,21 @@ function Contact() {
                                     </div>
                                     <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
                                         <h2 class="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
-                                        <form id="contactForm">
+                                        <form onSubmit={onSubmit} >
                                             <div class="mb-6">
                                                 <div class="mx-0 mb-1 sm:mb-4">
                                                     <div class="mx-0 mb-1 sm:mb-4">
                                                         <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label>
-                                                        <input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
+                                                        <input required type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
                                                     </div>
                                                     <div class="mx-0 mb-1 sm:mb-4">
                                                         <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label>
-                                                        <input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
+                                                        <input required type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
                                                     </div>
                                                 </div>
                                                 <div class="mx-0 mb-1 sm:mb-4">
-                                                    <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                                                    <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                                    <textarea required id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
                                                 </div>
                                             </div>
                                             <div class="text-center">
