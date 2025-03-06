@@ -105,7 +105,7 @@ function Contact() {
                                                 </div>
                                             </div>
                                             <div class="text-center">
-                                                <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                                                <input class="btn w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0" type="submit" value="Send Message" />
                                             </div>
                                         </form>
                                     </div>
