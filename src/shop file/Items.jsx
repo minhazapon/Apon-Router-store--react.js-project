@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import ShopBanner from "./ShopBanner"
+import Swal from "sweetalert2"
 
 function Items({ addCart }) {
 
@@ -17,6 +18,16 @@ function Items({ addCart }) {
             })
 
     }, [])
+
+    const handleAddToCart = (item) => {
+        addCart(item);
+        Swal.fire({
+            title: "Added to Cart!",
+            text: `${item.name} has been added successfully.`,
+            icon: "success",
+            confirmButtonText: "OK",
+        });
+    };
 
     return (
         <>
@@ -57,7 +68,7 @@ function Items({ addCart }) {
                                                     Add to favourites
                                                     <div class="tooltip-arrow" data-popper-arrow></div>
                                                 </div>
-                                                <button onClick={() => addCart(allItems)} type="button" class=" bg-black text-white inline-flex w-[200px] items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium btn hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                                <button onClick={() => handleAddToCart(allItems)} type="button" class=" bg-black text-white inline-flex w-[200px] items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium btn hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                                                     <svg class="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4" />
                                                     </svg>
