@@ -4,8 +4,6 @@ import Items from "./Items"
 
 function Shop() {
 
-    const [product, setProduct] = useState([])
-
     const getCart = () => {
         const saveCart = localStorage.getItem("cart")
         return saveCart ? JSON.parse(saveCart) : []
@@ -27,7 +25,7 @@ function Shop() {
 
     return (
         <div>
-            <Items addCart={addCart} product={product} setProduct={setProduct}></Items>
+            <Items addCart={addCart}></Items>
             <Cart handleClear={handleClear} cart={cart}></Cart>
         </div>
     )

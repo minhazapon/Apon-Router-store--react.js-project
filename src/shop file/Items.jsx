@@ -3,8 +3,10 @@ import { useEffect, useState } from "react"
 import ShopBanner from "./ShopBanner"
 import Swal from "sweetalert2"
 
-function Items({ addCart, product, setProduct }) {
+function Items({ addCart }) {
 
+    const [product, setProduct] = useState([])
+    const [search, setSearch] = useState("")
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8;
 
@@ -30,10 +32,14 @@ function Items({ addCart, product, setProduct }) {
         });
     };
 
+    const searchData = product.filter(itemZ =>
+        itemZ.name.toLowerCase().includes(search.toLowerCase())
+    )
+
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = product.slice(indexOfFirstItem, indexOfLastItem);
-    const totalPages = Math.ceil(product.length / itemsPerPage);
+    const currentItems = searchData.slice(indexOfFirstItem, indexOfLastItem);
+    const totalPages = Math.ceil(searchData.length / itemsPerPage);
 
     return (
         <>
@@ -41,7 +47,17 @@ function Items({ addCart, product, setProduct }) {
                 <div>
                     <ShopBanner></ShopBanner>
                 </div>
-                <div className=" ml-10 mr-10 mt-10 mb-10 p-5 ">
+                <div className=" flex justify-center mt-10 ml-10 mr-10 p-4 ">
+                    <input
+                        className=" border-[1px] h-[50px] w-full rounded-xl p-2"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Search Here"
+                        type="search"
+                        name="search"
+                        id="" />
+                </div>
+                <div className=" ml-10 mr-10 mt-5 mb-10 p-5 ">
                     <div className=" flex justify-center ">
                         <div className=" grid  md:grid-cols-4 gap-6 ">
                             {
