@@ -1,8 +1,5 @@
 
-
 function Cart({ cart, handleClear }) {
-
-
     return (
         <>
             <div className="  ml-10 mr-10 mt-10 mb-10 p-5 ">
