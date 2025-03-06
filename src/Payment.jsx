@@ -77,7 +77,7 @@ export default function PaymentForm() {
                                 />
                             </div>
                         </div>
-                        <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg">
+                        <Button type="submit" className=" btn w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg">
                             Pay Now
                         </Button>
                     </form>

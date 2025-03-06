@@ -14,6 +14,7 @@ import Products from './products file/Products.jsx';
 import About from './about file/About.jsx';
 import Shop from './shop file/Shop.jsx';
 import Contact from './contact file/Contact.jsx';
+import PaymentForm from './Payment.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
         path: "/router",
         element: <Products></Products>,
         loader: () => fetch('router.json').then(res => res.json())
+      },
+      {
+        path: "/payment",
+        element: <PaymentForm></PaymentForm>,
       }
     ],
   },
