@@ -8,7 +8,6 @@ function Nav() {
         <li className=" font-semibold "><NavLink to='/shop' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>Shop</NavLink></li>
         <li className=" font-semibold "><NavLink to='/contact' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>Contact</NavLink></li>
         <li className=" font-semibold "><NavLink to='/router' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>Products</NavLink></li>
-        <li className=" font-semibold "><NavLink to='/AddedProducts' style={({ isActive }) => ({ color: isActive ? "yellow" : "" })}>AddedProducts</NavLink></li>
     </>
 
     return (
