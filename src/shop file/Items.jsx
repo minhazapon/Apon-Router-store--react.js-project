@@ -1,6 +1,5 @@
 
-
-function Shop() {
+function Items() {
 
     return (
         <div>
@@ -9,4 +8,4 @@ function Shop() {
     )
 }
 
-export default Shop
+export default Items
