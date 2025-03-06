@@ -3,9 +3,10 @@ import { useEffect, useState } from "react"
 import ShopBanner from "./ShopBanner"
 import Swal from "sweetalert2"
 
-function Items({ addCart }) {
+function Items({ addCart, product, setProduct }) {
 
-    const [product, setProduct] = useState([])
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 8;
 
     useEffect(() => {
 
@@ -29,6 +30,11 @@ function Items({ addCart }) {
         });
     };
 
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = product.slice(indexOfFirstItem, indexOfLastItem);
+    const totalPages = Math.ceil(product.length / itemsPerPage);
+
     return (
         <>
             <div>
@@ -39,7 +45,7 @@ function Items({ addCart }) {
                     <div className=" flex justify-center ">
                         <div className=" grid  md:grid-cols-4 gap-6 ">
                             {
-                                product.map(allItems => <ul key={allItems.id}>
+                                currentItems.map(allItems => <ul key={allItems.id}>
                                     <div>
                                         <div class=" h-[520px] w-[300px] border-[1px] hover:border-[#B5E8E0] space-y-6 overflow-hidden rounded-lg  border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
                                             <a href="#" class="overflow-hidden rounded">
@@ -81,6 +87,27 @@ function Items({ addCart }) {
                             }
                         </div>
                     </div>
+                </div>
+
+                {/* Pagination Buttons */}
+                <div className="flex justify-center mt-6 space-x-4">
+                    <button
+                        className=" btn bg-black px-4 py-2  text-white rounded-md hover:bg-gray-400 disabled:bg-gray-200"
+                        onClick={() => setCurrentPage(currentPage - 1)}
+                        disabled={currentPage === 1}
+                    >
+                        Previous
+                    </button>
+                    <span className=" btn bg-blue-900 px-4 py-2 text-white rounded-md">
+                        Page {currentPage} of {totalPages}
+                    </span>
+                    <button
+                        className=" btn bg-black px-4 py-2 text-white rounded-md hover:bg-gray-400 disabled:bg-gray-200"
+                        onClick={() => setCurrentPage(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                    >
+                        Next
+                    </button>
                 </div>
             </div>
         </>

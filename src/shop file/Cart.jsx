@@ -1,6 +1,6 @@
 
 
-function Cart({ cart }) {
+function Cart({ cart, handleClear }) {
 
 
     return (
@@ -62,6 +62,9 @@ function Cart({ cart }) {
                         </ul>
                     ))
                 }
+                <div>
+                    <button onClick={() => handleClear()} className="btn bg-black w-full mt-5 text-white" >Clear All</button>
+                </div>
             </div>
         </>
     )
