@@ -1,5 +1,21 @@
+import axios from "axios"
+import { useEffect, useState } from "react"
 
 function Items({ addCart }) {
+
+    const [product, setProduct] = useState([])
+
+    useEffect(() => {
+
+        axios.get('router.json')
+            .then(res => {
+                setProduct(res.data)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+    }, [])
 
     return (
         <>
